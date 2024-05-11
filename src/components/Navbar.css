@@ -114,6 +114,7 @@
     flex-direction: column;
     transition: transform 0.3s ease;
     transform: translateX(-100%);
+    z-index: 1;
   }
 
   .mobile-nav-items > ul {

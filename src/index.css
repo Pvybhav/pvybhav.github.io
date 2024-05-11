@@ -8,3 +8,8 @@
   --dark-text: #e1f7f5;
   --light-text: #1e0342;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
