@@ -43,6 +43,11 @@
   transform: scaleX(1);
 }
 
+a.active {
+  border-bottom: 2px solid var(--very-light);
+  padding-bottom: 3px;
+}
+
 .nav-logo a,
 .nav-button a {
   color: var(--dark-text);
@@ -206,7 +211,7 @@
 
   #hamburger-menu {
     display: block;
-    color: var(--light);
+    color: var(--very-light);
     cursor: pointer;
     font-size: 24px;
   }

@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const getMobileMenu = document.getElementById("mobile-menu")!;
+
   useEffect(() => {
     const getHubergerIcon = document.getElementById("hamburger-menu")!;
     const getHubergerCrossIcon = document.getElementById("hamburger-cross")!;
@@ -32,24 +35,31 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="nav-logo">
-          <a href="#">Vybhav</a>
+          <Link to="/">Vybhav</Link>
         </div>
         <div className="nav-items">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink
+                to="/about"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
         <div className="nav-button">
           <div className="anim-layer"></div>
-          <a href="#">Sign Up</a>
+          <Link to="/login">Login</Link>
         </div>
         <div id="hamburger-menu">&#9776;</div>
       </div>
@@ -58,19 +68,39 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link
+                to="/"
+                onClick={() => (getMobileMenu.style.display = "none")}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink
+                to="/about"
+                onClick={() => (getMobileMenu.style.display = "none")}
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink
+                to="/contact"
+                onClick={() => (getMobileMenu.style.display = "none")}
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="mobile-nav-button">
           <div className="anim-layer"></div>
-          <a href="#">Sign Up</a>
+          <Link
+            to="/login"
+            onClick={() => (getMobileMenu.style.display = "none")}
+          >
+            Login
+          </Link>
         </div>
         <div id="hamburger-cross">&#10006;</div>
       </div>
