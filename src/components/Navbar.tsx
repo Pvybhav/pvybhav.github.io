@@ -57,10 +57,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="nav-button">
+        {/* <div className="nav-button">
           <div className="anim-layer"></div>
           <Link to="/login">Login</Link>
-        </div>
+        </div> */}
         <div id="hamburger-menu">&#9776;</div>
       </div>
 
@@ -105,7 +105,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="mobile-nav-button">
+        {/* <div className="mobile-nav-button">
           <div className="anim-layer"></div>
           <Link
             to="/login"
@@ -117,7 +117,7 @@ const Navbar = () => {
           >
             Login
           </Link>
-        </div>
+        </div> */}
         <div id="hamburger-cross">&#10006;</div>
       </div>
     </>

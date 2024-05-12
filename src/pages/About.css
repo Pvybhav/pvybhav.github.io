@@ -1,0 +1,12 @@
+.about-page {
+  font-size: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  .code-link {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

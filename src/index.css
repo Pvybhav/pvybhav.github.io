@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 :root {
   background-color: #001c30;
   color: #dafffb;
@@ -14,4 +17,15 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+/* 1rem = 10px */
+/* 62.5*16px(base) = 10px */
+html {
+  font-size: 62.5%; /* will work when user change browser font */
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  font-size: 1.5rem;
 }
