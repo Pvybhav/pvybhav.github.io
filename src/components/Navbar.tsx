@@ -70,7 +70,11 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                onClick={() => (getMobileMenu.style.display = "none")}
+                onClick={() => {
+                  if (getMobileMenu) {
+                    getMobileMenu.style.display = "none";
+                  }
+                }}
               >
                 Home
               </Link>
@@ -78,7 +82,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/about"
-                onClick={() => (getMobileMenu.style.display = "none")}
+                onClick={() => {
+                  if (getMobileMenu) {
+                    getMobileMenu.style.display = "none";
+                  }
+                }}
               >
                 About
               </NavLink>
@@ -86,7 +94,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/contact"
-                onClick={() => (getMobileMenu.style.display = "none")}
+                onClick={() => {
+                  if (getMobileMenu) {
+                    getMobileMenu.style.display = "none";
+                  }
+                }}
               >
                 Contact
               </NavLink>
@@ -97,7 +109,11 @@ const Navbar = () => {
           <div className="anim-layer"></div>
           <Link
             to="/login"
-            onClick={() => (getMobileMenu.style.display = "none")}
+            onClick={() => {
+              if (getMobileMenu) {
+                getMobileMenu.style.display = "none";
+              }
+            }}
           >
             Login
           </Link>
