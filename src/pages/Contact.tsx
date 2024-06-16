@@ -9,15 +9,19 @@ import GmailSVG from "./../assets/Images/svg/gmail.svg";
 import MSOutlookSVG from "./../assets/Images/svg/ms-outlook.svg";
 import TelegramSVG from "./../assets/Images/svg/telegram.svg";
 import YoutubeSVG from "./../assets/Images/svg/youtube.svg";
+import GitHubSVG from "./../assets/Images/svg/github.svg";
+import StackOverflowSVG from "./../assets/Images/svg/stackoverflow.svg";
 
 import {
   FACEBOOK_PROFILE_URL,
+  GITHUB_PROFILE_URL,
   GMAIL_EMAIL_ADDRESS,
   INSTAGRAM_PROFILE_URL,
   LINKEDIN_PROFILE_URL,
   MICROSOFT_EMAIL_ADDRESS,
+  STACKOVERFLOW_PROFILE_URL,
   TELEGRAM_URL,
-  TWITTER_PROFILE_URL,
+  X_PROFILE_URL,
   WHATSAPP_URL,
   YOUTUBE_CHANNEL_URL,
 } from "../utils/constants.ts";
@@ -50,7 +54,7 @@ const Contact = () => {
           <button onClick={() => window.open(LINKEDIN_PROFILE_URL)}>
             <img src={LinkedInSVG} /> LinkedIn
           </button>
-          <button onClick={() => window.open(TWITTER_PROFILE_URL)}>
+          <button onClick={() => window.open(X_PROFILE_URL)}>
             <img src={XSVG} /> X
           </button>
           <button onClick={() => window.open(FACEBOOK_PROFILE_URL)}>
@@ -64,6 +68,16 @@ const Contact = () => {
           </button>
           <button onClick={() => window.open(YOUTUBE_CHANNEL_URL)}>
             <img src={YoutubeSVG} /> Youtube
+          </button>
+        </div>
+
+        <h2 className="links-header">Official</h2>
+        <div className="code-links">
+          <button onClick={() => window.open(GITHUB_PROFILE_URL)}>
+            <img src={GitHubSVG} /> GitHub
+          </button>
+          <button onClick={() => window.open(STACKOVERFLOW_PROFILE_URL)}>
+            <img src={StackOverflowSVG} /> Stack Overflow
           </button>
         </div>
       </div>

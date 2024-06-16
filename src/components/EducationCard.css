@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+  background-color: #022640;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  color: var(--dark-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  .card-header {
+    padding: 0 1rem;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      -webkit-box-shadow: 0 4px 6px -6px #222;
+      -moz-box-shadow: 0 4px 6px -6px #222;
+      box-shadow: 0 2px 6px -6px white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+  }
+  .card-body {
+    padding: 1rem;
+
+    .branch {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      letter-spacing: 3px;
+    }
+
+    .institute {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .location {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .duration {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .percentage {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .certificate {
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      a:link,
+      a:visited {
+        color: var(--dark-text);
+      }
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(64, 115, 234, 0.19) 0px 5px 10px,
+    rgba(202, 48, 48, 0.23) 0px 3px 3px;
+  border-color: gray;
+}
+
+.card:hover {
+  font-weight: bold;
+  color: darksalmon;
+}
+
+.card:hover a:link,
+.card:hover a:visited {
+  color: darksalmon !important;
+}
