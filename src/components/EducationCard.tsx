@@ -8,12 +8,12 @@ import PercentageIcon from "../assets/Images/svg/PercentageIcon.tsx";
 
 interface CourseDetails {
   title: string;
-  branch: string;
+  branch?: string;
   institueName: string;
   instituteLocation: string;
   courseDuration: string;
-  percentage: string;
-  cgpa: string;
+  percentage?: string;
+  cgpa?: string;
   certificate: string;
 }
 
