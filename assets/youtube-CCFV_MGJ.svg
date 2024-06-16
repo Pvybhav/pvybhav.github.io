@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg width="800px" height="800px" viewBox="0 0 100 100" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style type="text/css">
+
+<style type="text/css">
 	.st0{fill:#FFFFFF;}
 	.st1{fill:#F5BB41;}
 	.st2{fill:#2167D1;}
@@ -11,13 +13,13 @@
 	.st6{fill:#D74F3F;}
 	.st7{fill:#D43C89;}
 	.st8{fill:#B2005F;}
-	.st9{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#00clipRuleke-width:3;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10;}
 	
-		.st10{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	
-		.st11{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#040404;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st12{fill-rule:evenodd;clip-rule:evenodd;}
-	.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#040404;}
+		.st10{fillRule:evenodd;clipRule:evenodd;fill:none;stroke:#000000;strokeWidth:3;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10;}
+	clipRule
+		.st11{fillRule:evenoddclipRulee:evenodd;fill:none;stroke:#040404;strokeWidth:3;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10;}
+	.st12{fillRule:evenodd;clip-rule:evenodd;}
+	.st13{fillRule:evenodd;clip-rule:evenodd;fill:#040404;}
 	.st14{fill:url(#SVGID_1_);}
 	.st15{fill:url(#SVGID_2_);}
 	.st16{fill:url(#SVGID_3_);}
@@ -81,7 +83,7 @@
 	.st74{fill:url(#SVGID_60_);}
 	.st75{fill:url(#SVGID_61_);}
 	.st76{fill:url(#SVGID_62_);}
-	.st77{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st77{fill:none;stroke:#000000;strokeWidth:3;stroke-miterlimit:10;}
 	.st78{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st79{fill:#4BC9FF;}
 	.st80{fill:#5500DD;}
@@ -101,19 +103,19 @@
 	.st94{fill:#181EF2;}
 	.st95{fill:#FF0000;}
 	.st96{fill:#FE466C;}
-	.st97{fill:#FA4778;}
+	.st97{fill:#FA4778;}clipRule
 	.st98{fill:#FF7700;}
-	.st99{fill-rule:evenodd;clip-rule:evenodd;fill:#1F6BF6;}
+	.st99{fillRule:evenodd;clip-rule:evenodd;fill:#1F6BF6;}
 	.st100{fill:#520094;}
 	.st101{fill:#4477E8;}
 	.st102{fill:#3D1D1C;}
 	.st103{fill:#FFE812;}
-	.st104{fill:#344356;}
+	.st104{fill:#344356;}clipRule
 	.st105{fill:#00CC76;}
-	.st106{fill-rule:evenodd;clip-rule:evenodd;fill:#345E90;}
-	.st107{fill:#1F65D8;}
+	.st106{fillRule:evenodd;clip-rule:evenodd;fill:#345E90;}
+	.st107{fill:#1F65D8;}clipRule
 	.st108{fill:#EB3587;}
-	.st109{fill-rule:evenodd;clip-rule:evenodd;fill:#603A88;}
+	.st109{fillRule:evenodd;clip-rule:evenodd;fill:#603A88;}
 	.st110{fill:#E3CE99;}
 	.st111{fill:#783AF9;}
 	.st112{fill:#FF515E;}
@@ -123,20 +125,20 @@
 	.st116{fill:#69C9D0;}
 	.st117{fill:#1B92D1;}
 	.st118{fill:#EB4F4A;}
-	.st119{fill:#513728;}
+	.st119{fill:#513728;}clipRule
 	.st120{fill:#FF6600;}
-	.st121{fill-rule:evenodd;clip-rule:evenodd;fill:#B61438;}
+	.st121{fillRule:evenodd;clip-rule:evenodd;fill:#B61438;}
 	.st122{fill:#FFFC00;}
-	.st123{fill:#141414;}
-	.st124{fill:#94D137;}
-	.st125{fill-rule:evenodd;clip-rule:evenodd;fill:#F1F1F1;}
-	.st126{fill-rule:evenodd;clip-rule:evenodd;fill:#66E066;}
+	.st123{fill:#141414;}clipRule
+	.st124{fill:#94D137;}clipRule
+	.st125{fillRule:evenodd;clip-rule:evenodd;fill:#F1F1F1;}
+	.st126{fillRule:evenodd;clip-rule:evenodd;fill:#66E066;}
 	.st127{fill:#2D8CFF;}
 	.st128{fill:#F1A300;}
 	.st129{fill:#4BA2F2;}
-	.st130{fill:#1A5099;}
+	.st130{fill:#1A5099;}clipRule
 	.st131{fill:#EE6060;}
-	.st132{fill-rule:evenodd;clip-rule:evenodd;fill:#F48120;}
+	.st132{fillRule:evenodd;clip-rule:evenodd;fill:#F48120;}
 	.st133{fill:#222222;}
 	.st134{fill:url(#SVGID_63_);}
 	.st135{fill:#0077B5;}
@@ -156,13 +158,23 @@
 	.st149{fill:#464EB8;}
 	.st150{fill:#7B83EB;}
 </style>
-<g id="Layer_1"/>
-<g id="Layer_2">
-<g>
-<path class="st95" d="M94.761,27.369c-1.075-4.045-4.24-7.231-8.26-8.312C79.216,17.092,50,17.092,50,17.092    s-29.216,0-36.501,1.965c-4.02,1.081-7.186,4.267-8.26,8.312C3.286,34.702,3.286,50,3.286,50s0,15.298,1.952,22.631    c1.074,4.045,4.24,7.231,8.26,8.312C20.784,82.908,50,82.908,50,82.908s29.216,0,36.502-1.965c4.02-1.082,7.185-4.267,8.26-8.312    C96.714,65.298,96.714,50,96.714,50S96.714,34.702,94.761,27.369z"/>
-<g>
-<polygon class="st83" points="40.284,35.877 40.284,64.123 65.114,50.001    "/>
-</g>
-</g>
-</g>
-</svg>
+
+<g id="Layer_1"/>
+
+<g id="Layer_2">
+
+<g>
+
+<path class="st95" d="M94.761,27.369c-1.075-4.045-4.24-7.231-8.26-8.312C79.216,17.092,50,17.092,50,17.092    s-29.216,0-36.501,1.965c-4.02,1.081-7.186,4.267-8.26,8.312C3.286,34.702,3.286,50,3.286,50s0,15.298,1.952,22.631    c1.074,4.045,4.24,7.231,8.26,8.312C20.784,82.908,50,82.908,50,82.908s29.216,0,36.502-1.965c4.02-1.082,7.185-4.267,8.26-8.312    C96.714,65.298,96.714,50,96.714,50S96.714,34.702,94.761,27.369z"/>
+
+<g>
+
+<polygon class="st83" points="40.284,35.877 40.284,64.123 65.114,50.001    "/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>
