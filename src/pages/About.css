@@ -3,21 +3,4 @@
     width: 90%;
     margin: 0 auto;
   }
-
-  .education-details-card-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 2rem;
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .education-section-header {
-    font-size: 4rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
 }
