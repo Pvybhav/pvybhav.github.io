@@ -40,20 +40,27 @@ const Navbar = () => {
         <div className="nav-items">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/education"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""
                 }
               >
-                About
+                Education
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -68,27 +75,33 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li>
-              <Link
+              <NavLink
                 to="/"
                 onClick={() => {
                   if (getMobileMenu) {
                     getMobileMenu.style.display = "none";
                   }
                 }}
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/education"
                 onClick={() => {
                   if (getMobileMenu) {
                     getMobileMenu.style.display = "none";
                   }
                 }}
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
               >
-                About
+                Education
               </NavLink>
             </li>
             <li>
@@ -99,6 +112,9 @@ const Navbar = () => {
                     getMobileMenu.style.display = "none";
                   }
                 }}
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
               >
                 Contact
               </NavLink>

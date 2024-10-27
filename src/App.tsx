@@ -6,7 +6,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <p className="line-1 anim-typewriter">Hello, My name is VYBHAV</p>
+      {/* <p className="line-1 anim-typewriter">Hello, My name is VYBHAV</p> */}
+      {/* <img
+        src="src/assets/Images/HeroImage.JPG"
+        alt="Hero Image"
+        className="hero-image"
+      /> */}
+
       <Outlet />
     </div>
   );

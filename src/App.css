@@ -1,3 +1,11 @@
+.hero-image {
+  width: 100dvw;
+  height: 100dvh;
+  background-image: url("/src/assets/Images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .line-1 {
   position: relative;
   top: 50%;
@@ -31,5 +39,35 @@
   }
   to {
     border-right-color: transparent;
+  }
+}
+
+@keyframes colorMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes colorFill {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
   }
 }

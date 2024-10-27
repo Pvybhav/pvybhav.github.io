@@ -1,14 +1,14 @@
 import EducationCard from "../components/EducationCard";
 import Skills from "../components/Skills";
-import "./About.css";
+import "./Education.css";
 
-const About = () => {
+const Education = () => {
   return (
-    <div className="about-page">
+    <div className="education-page">
       <EducationCard />
       <Skills />
     </div>
   );
 };
 
-export default About;
+export default Education;
