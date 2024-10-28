@@ -20,6 +20,7 @@ const EDUCATION_DETAILS = [
       courseDuration: "2015 - 2019",
       cgpa: "7.48 (CGPA)",
       certificate: "M.Tech-Marks-Sheet.jpg",
+      isRecent: true
     },
     {
       title: "Bachelor of science (B.Sc)",

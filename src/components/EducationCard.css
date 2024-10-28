@@ -1,7 +1,7 @@
 .education-details-card-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 2rem;
+  gap: 5rem;
   width: 95%;
   margin: 0 auto;
 }
@@ -16,19 +16,24 @@
 }
 
 .card {
+  opacity: 0.6;
   position: relative;
   background-color: #022640;
-  padding: 1rem;
   border-radius: 1rem;
 
   color: var(--dark-text);
   transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
   border: 1px solid transparent;
+  border-color: gray;
+  font-size: 14px;
+
+  /* background: linear-gradient(0deg, #000, #272727); */
+
   .card-header {
     padding: 0 1rem;
     .title {
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 1.5rem;
+      /* font-weight: bold; */
       -webkit-box-shadow: 0 4px 6px -6px #222;
       -moz-box-shadow: 0 4px 6px -6px #222;
       box-shadow: 0 2px 6px -6px white;
@@ -91,6 +96,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
+      text-decoration: underline;
 
       a:link,
       a:visited {
@@ -98,17 +104,66 @@
       }
     }
   }
+  &.recent {
+    border-color: tomato;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease,
+      translateY(-1rem);
+  }
 }
 
 .card:hover {
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
+  opacity: 1;
+  /* font-weight: bold; */
   box-shadow: rgba(64, 115, 234, 0.19) 0px 5px 10px,
     rgba(202, 48, 48, 0.23) 0px 3px 3px;
-  border-color: gray;
-  color: darksalmon;
+  border-color: transparent;
+  color: rgb(79, 208, 157);
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  &:after {
+    filter: blur(50px);
+  }
 }
 
 .card:hover a:link,
 .card:hover a:visited {
-  color: darksalmon !important;
+  color: rgb(79, 208, 157) !important;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }

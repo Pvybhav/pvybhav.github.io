@@ -14,10 +14,15 @@
     .icon {
       width: 10rem;
       height: 10rem;
-      background-color: rgb(32, 55, 47);
+      /* background-color: rgb(32, 55, 47); */
       display: flex;
       align-items: center;
       justify-content: center;
+      border: 2px solid rgb(109, 106, 106);
+      border-radius: 50%;
+      color: var(--dark-text);
+      cursor: pointer;
+      animation: colorScroll 3s ease forwards infinite;
     }
   }
   .where-ive-worked {
@@ -49,4 +54,16 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+@keyframes colorScroll {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

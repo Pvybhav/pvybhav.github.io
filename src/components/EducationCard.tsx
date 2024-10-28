@@ -24,10 +24,11 @@ const EducationCard = () => {
               percentage,
               cgpa,
               certificate,
+              isRecent,
             },
             index
           ) => (
-            <div className="card" key={index}>
+            <div className={`card ${isRecent ? "recent" : ""}`} key={index}>
               <div className="card-header">
                 <div className="title">{title}</div>
               </div>
