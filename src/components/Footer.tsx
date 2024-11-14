@@ -92,6 +92,20 @@ const Footer = () => {
       type: "external-link",
       url: YOUTUBE_CHANNEL_URL,
     },
+    {
+      altText: "GitHub",
+      iconName: GitHubSVG,
+      tooltip: "GitHub",
+      type: "external-link",
+      url: GITHUB_PROFILE_URL,
+    },
+    {
+      altText: "Stack Overflow",
+      iconName: StackOverflowSVG,
+      tooltip: "Stack Overflow",
+      type: "external-link",
+      url: STACKOVERFLOW_PROFILE_URL,
+    },
   ];
 
   return (
