@@ -27,60 +27,109 @@ import {
 } from "../utils/constants.ts";
 
 const Contact = () => {
+  const footerDetails = [
+    {
+      altText: "Gmail",
+      iconName: GmailSVG,
+      tooltip: "Gmail",
+      type: "mail",
+      mailTo: GMAIL_EMAIL_ADDRESS,
+    },
+    {
+      altText: "Outlook",
+      iconName: MSOutlookSVG,
+      tooltip: "Outlook",
+      type: "mail",
+      mailTo: MICROSOFT_EMAIL_ADDRESS,
+    },
+    {
+      altText: "WhatsApp",
+      iconName: WhatsAppSVG,
+      tooltip: "WhatsApp",
+      type: "external-link",
+      url: WHATSAPP_URL,
+    },
+    {
+      altText: "LinkedIn",
+      iconName: LinkedInSVG,
+      tooltip: "LinkedIn",
+      type: "external-link",
+      url: LINKEDIN_PROFILE_URL,
+    },
+    {
+      altText: "X",
+      iconName: XSVG,
+      tooltip: "X",
+      type: "external-link",
+      url: X_PROFILE_URL,
+    },
+
+    {
+      altText: "Facebook",
+      iconName: FacebookSVG,
+      tooltip: "Facebook",
+      type: "external-link",
+      url: FACEBOOK_PROFILE_URL,
+    },
+    {
+      altText: "Instagram",
+      iconName: InstagramSVG,
+      tooltip: "Instagram",
+      type: "external-link",
+      url: INSTAGRAM_PROFILE_URL,
+    },
+    {
+      altText: "Telegram",
+      iconName: TelegramSVG,
+      tooltip: "Telegram",
+      type: "external-link",
+      url: TELEGRAM_URL,
+    },
+    {
+      altText: "Youtube",
+      iconName: YoutubeSVG,
+      tooltip: "Youtube",
+      type: "external-link",
+      url: YOUTUBE_CHANNEL_URL,
+    },
+  ];
+
   return (
     <div className="contact-page">
       <h1>Contact Vybhav</h1>
-      <div>
-        <h2 className="links-header">Email</h2>
-        <div className="email-links">
-          <a href={`mailto:${GMAIL_EMAIL_ADDRESS}`}>
-            <button>
-              <img src={GmailSVG} /> Gmail
-            </button>
-          </a>
 
-          <a href={`mailto:${MICROSOFT_EMAIL_ADDRESS}`}>
-            <button>
-              <img src={MSOutlookSVG} /> Outlook
-            </button>
-          </a>
-        </div>
-        <h2 className="links-header">Social media</h2>
-        <div className="social-media-links">
-          <button onClick={() => window.open(WHATSAPP_URL)}>
-            <img src={WhatsAppSVG} />
-            WhatsApp
-          </button>
-          <button onClick={() => window.open(LINKEDIN_PROFILE_URL)}>
-            <img src={LinkedInSVG} /> LinkedIn
-          </button>
-          <button onClick={() => window.open(X_PROFILE_URL)}>
-            <img src={XSVG} /> X
-          </button>
-          <button onClick={() => window.open(FACEBOOK_PROFILE_URL)}>
-            <img src={FacebookSVG} /> Facebook
-          </button>
-          <button onClick={() => window.open(INSTAGRAM_PROFILE_URL)}>
-            <img src={InstagramSVG} /> Instagram
-          </button>
-          <button onClick={() => window.open(TELEGRAM_URL)}>
-            <img src={TelegramSVG} /> Telegram
-          </button>
-          <button onClick={() => window.open(YOUTUBE_CHANNEL_URL)}>
-            <img src={YoutubeSVG} /> Youtube
-          </button>
-        </div>
-
-        <h2 className="links-header">Official</h2>
-        <div className="code-links">
-          <button onClick={() => window.open(GITHUB_PROFILE_URL)}>
-            <img src={GitHubSVG} /> GitHub
-          </button>
-          <button onClick={() => window.open(STACKOVERFLOW_PROFILE_URL)}>
-            <img src={StackOverflowSVG} /> Stack Overflow
-          </button>
-        </div>
-      </div>
+      <footer className="footer">
+        {footerDetails?.map(
+          ({ altText, iconName, tooltip, type, mailTo, url }, index) => {
+            if (type === "mail") {
+              return (
+                <a href={`mailto:${mailTo}`}>
+                  <button
+                    key={index}
+                    className="btn"
+                    onClick={() => window.open(url)}
+                  >
+                    <span title={tooltip}>
+                      <img
+                        src={iconName}
+                        alt={altText}
+                        className="footer-icon"
+                      />
+                    </span>
+                  </button>
+                </a>
+              );
+            }
+            return (
+              <button className="btn" onClick={() => window.open(url)}>
+                <span key={index} title={tooltip}>
+                  <img src={iconName} alt={altText} className="footer-icon" />
+                </span>
+              </button>
+            );
+          }
+        )}
+      </footer>
     </div>
   );
 };
