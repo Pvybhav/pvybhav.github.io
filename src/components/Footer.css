@@ -125,7 +125,7 @@
   box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
   border-radius: 50%;
   transition: 0.2;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .btn span img {
@@ -138,6 +138,8 @@
   animation-name: pulse;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px rgb(244, 120, 120);
+
   opacity: 1;
 }
 
