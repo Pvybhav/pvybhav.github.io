@@ -9,6 +9,7 @@ import SassSvg from "../assets/Images/svg/skills/sass.svg";
 import Bootstrap4Svg from "../assets/Images/svg/skills/bootstrap-4.svg";
 import SemanticUISvg from "../assets/Images/svg/skills/semantic-ui.svg";
 import TailwindSvg from "../assets/Images/svg/skills/tailwind.svg";
+import GitSvg from "../assets/Images/svg/skills/git.svg";
 import GithubSvg from "../assets/Images/svg/skills/github.svg";
 import GitlabSvg from "../assets/Images/svg/skills/gitlab.svg";
 import BitbucketSvg from "../assets/Images/svg/skills/bitbucket.svg";
@@ -62,7 +63,7 @@ const Skills = () => {
           <div className="icon">
             <img src={Bootstrap4Svg} alt="Bootstrap" />
           </div>
-          <div className="icon">Reactstrap</div>
+          {/* <div className="icon">Reactstrap</div> */}
           <div className="icon">
             <img src={SemanticUISvg} alt="Semantic UI" />{" "}
           </div>
@@ -71,6 +72,9 @@ const Skills = () => {
           </div>
 
           {/* Source Control */}
+          <div className="icon">
+            <img src={GitSvg} alt="Git" />
+          </div>
           <div className="icon">
             <img src={GithubSvg} alt="Github" />
           </div>
@@ -98,7 +102,9 @@ const Skills = () => {
           </div>
 
           {/* Middleware */}
-          <div className="icon">Expres JS</div>
+          <div className="icon">
+            <img src={ExpressSvg} alt="Express JS" />
+          </div>
 
           {/* Backend */}
           {/* <div className="icon">Python</div> */}
@@ -110,13 +116,13 @@ const Skills = () => {
           <div className="icon">
             <img src={JestSvg} alt="Jest" />
           </div>
-          <div className="icon">Enzyme</div>
+          {/* <div className="icon">Enzyme</div> */}
           {/* <div className="icon">React testing library</div> */}
 
           {/* Others */}
           {/* <div className="icon">Devops</div> */}
 
-          <div className="icon">Jasonelle (formerly Jasonelle)</div>
+          {/* <div className="icon">Jasonelle (formerly Jasonelle)</div> */}
 
           {/* IT Service Management */}
           {/* <div className="icon">Jira</div> */}
