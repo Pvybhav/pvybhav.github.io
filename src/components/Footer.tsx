@@ -109,34 +109,41 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer">
-      {footerDetails?.map(
-        ({ altText, iconName, tooltip, type, mailTo, url }, index) => {
-          if (type === "mail") {
+    <>
+      <hr className="divider" />
+      <footer className="footer">
+        {footerDetails?.map(
+          ({ altText, iconName, tooltip, type, mailTo, url }, index) => {
+            if (type === "mail") {
+              return (
+                <a href={`mailto:${mailTo}`}>
+                  <button
+                    key={index}
+                    className="btn"
+                    onClick={() => window.open(url)}
+                  >
+                    <span title={tooltip}>
+                      <img
+                        src={iconName}
+                        alt={altText}
+                        className="footer-icon"
+                      />
+                    </span>
+                  </button>
+                </a>
+              );
+            }
             return (
-              <a href={`mailto:${mailTo}`}>
-                <button
-                  key={index}
-                  className="btn"
-                  onClick={() => window.open(url)}
-                >
-                  <span title={tooltip}>
-                    <img src={iconName} alt={altText} className="footer-icon" />
-                  </span>
-                </button>
-              </a>
+              <button className="btn" onClick={() => window.open(url)}>
+                <span key={index} title={tooltip}>
+                  <img src={iconName} alt={altText} className="footer-icon" />
+                </span>
+              </button>
             );
           }
-          return (
-            <button className="btn" onClick={() => window.open(url)}>
-              <span key={index} title={tooltip}>
-                <img src={iconName} alt={altText} className="footer-icon" />
-              </span>
-            </button>
-          );
-        }
-      )}
-    </footer>
+        )}
+      </footer>
+    </>
   );
 };
 

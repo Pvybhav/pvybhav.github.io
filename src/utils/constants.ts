@@ -3,7 +3,7 @@ const WHATSAPP_URL = "https://wa.link/mcfbqi";
 const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/vybhav-podala-034689122/";
 const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/channel/UCaZovYL2aLUzkrVBxaf5Tww";
 const FACEBOOK_PROFILE_URL = "https://www.facebook.com/profile.php?id=100008931785704";
-const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/vybhavpodala/";
+const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/podalavaibhav/";
 const TELEGRAM_URL = "https://t.me/vybhavpodala"
 
 const GITHUB_PROFILE_URL = "https://github.com/Pvybhav";

@@ -11,7 +11,6 @@
 } */
 
 .footer {
-  margin-top: 20rem;
 }
 
 .social-media-links,
@@ -153,4 +152,27 @@
   to {
     transform: scale(1);
   }
+}
+
+hr.divider {
+  margin-top: 20rem;
+
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: rgb(158, 24, 24);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.divider:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgb(210, 43, 43);
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }

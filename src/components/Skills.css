@@ -19,10 +19,14 @@
       align-items: center;
       justify-content: center;
       border: 2px solid rgb(109, 106, 106);
-      border-radius: 50%;
+      border-radius: 5%;
+      padding: 20px;
       color: var(--dark-text);
       cursor: pointer;
       animation: colorScroll 3s ease forwards infinite;
+      img {
+        width: 80px;
+      }
     }
   }
   .where-ive-worked {
@@ -38,11 +42,47 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: blueviolet;
+      /* background: blueviolet; */
       margin: 0 auto;
+      border-radius: 5%;
+      /* background-color: #55a1bf; */
+      border: 1px solid rgb(79, 67, 65);
+      filter: brightness(1.1);
+      border-radius: 10%;
+      /* opacity: 0.5; */
+      background-color: #ffc6c6;
     }
     .company.current {
-      background-color: red;
+      /* background-color: #55a1bf; */
+      border: 2px solid red;
+      border-radius: 10%;
+      /* filter: brightness(2); */
+      position: relative;
+      .tag {
+        background: #058;
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        /* font-size: 0.875rem; */
+        height: 30px;
+        line-height: 30px;
+        margin-right: -26rem;
+        padding: 0 0.666rem;
+        position: absolute;
+        top: 0px;
+      }
+      .tag::after {
+        border-right: 10px solid #058;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        left: -8px;
+        top: 0px;
+        width: 0;
+      }
     }
   }
 }
@@ -54,6 +94,13 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.company {
+  img {
+    width: 16rem;
+    height: 16rem;
+  }
 }
 
 @keyframes colorScroll {
